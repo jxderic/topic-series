@@ -4,7 +4,7 @@
   "description": "vite源码解析",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "nodemon index.js"
   },
   "author": "",
   "license": "ISC",
