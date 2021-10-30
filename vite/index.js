@@ -2,7 +2,7 @@
  * @Author jinxiaodong
  * @Date 2021-10-26 09:35:02
  * @LastEditors jinxiaodong
- * @LastEditTime 2021-10-30 09:12:09
+ * @LastEditTime 2021-10-30 10:54:14
  * @Desc web server
  */
 const Koa = require('koa')
@@ -15,7 +15,12 @@ app.use(async (ctx) => {
   console.log('url:', url)
   if (url === '/') {
     ctx.type = 'text/html'
-    const content = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8')
+    let content = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8')
+    content = content.replace('<script', `
+      <script>
+        window.process = {env: { NODE_ENV: 'development'}}
+      </script>
+      <script`)
     ctx.body = content
   } else if (url.endsWith('js')) {
     const jsPath = path.resolve(__dirname, url.slice(1))
