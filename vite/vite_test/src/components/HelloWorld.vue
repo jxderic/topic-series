@@ -5,6 +5,9 @@
 </template>
 
 <script>
+import('./hmr').then(res => {
+  console.log(res)
+})
 export default {
   name: 'HelloWorld',
   props: {

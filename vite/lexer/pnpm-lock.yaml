@@ -1,0 +1,15 @@
+lockfileVersion: 5.3
+
+specifiers:
+  es-module-lexer: ^0.9.3
+
+dependencies:
+  es-module-lexer: registry.npmmirror.com/es-module-lexer/0.9.3
+
+packages:
+
+  registry.npmmirror.com/es-module-lexer/0.9.3:
+    resolution: {integrity: sha1-bxPbAMw4QXE32vdDZvU1yOtDjxk=, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/es-module-lexer/download/es-module-lexer-0.9.3.tgz}
+    name: es-module-lexer
+    version: 0.9.3
+    dev: false

@@ -1,0 +1,50 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "lexer",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "ISC"
+    },
+    "prefix": "/Users/jinxiaodong/Downloads/mygithub/topic-series/vite/lexer"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/Users/jinxiaodong/.pnpm-store/v3",
+    "virtualStoreDir": "/Users/jinxiaodong/Downloads/mygithub/topic-series/vite/lexer/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/Users/jinxiaodong/Downloads/mygithub/topic-series/vite/lexer",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:update-check": {
+    "currentVersion": "6.20.3",
+    "latestVersion": "6.23.1"
+  },
+  "5 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "es-module-lexerdebug is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npm.taobao.org/es-module-lexerdebug"
+    },
+    "response": {
+      "size": 0
+    },
+    "pkgName": "es-module-lexerdebug",
+    "pkgsStack": [],
+    "err": {
+      "name": "pnpm",
+      "message": "GET https://registry.npm.taobao.org/es-module-lexerdebug: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "pnpm: GET https://registry.npm.taobao.org/es-module-lexerdebug: Not Found - 404\n    at RetryOperation._fn (/Users/jinxiaodong/pnpm-global/5/node_modules/.pnpm/registry.npmmirror.com+pnpm@6.20.3/node_modules/pnpm/dist/pnpm.cjs:84882:18)\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)"
+    }
+  }
+}

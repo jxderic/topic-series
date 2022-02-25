@@ -175,6 +175,7 @@ export function rewriteImports(
         let id = source.substring(start, end)
         const hasViteIgnore = /\/\*\s*@vite-ignore\s*\*\//.test(id)
         let hasLiteralDynamicId = false
+        console.log(id, dynamicIndex)
         if (dynamicIndex >= 0) {
           // #998 remove comment
           id = id.replace(/\/\*[\s\S]*?\*\/|([^\\:]|^)\/\/.*$/gm, '')
